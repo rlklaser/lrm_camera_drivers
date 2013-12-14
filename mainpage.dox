@@ -4,11 +4,15 @@
 
 \b lrm_camera_drivers 
 
-<!-- 
-Provide an overview of your package.
--->
+@section summary Summary
+This pakage provides camera drivers mainly for <a haref="www.ptgrey.com>PointGrey</a> cameras. 
+The main purpose is just to provide a deinterlace of the Format7 raw image produced by multiple 
+lens cameras, like the stereo Bumblebee 2. The concept is to rely on the Firewire (1394) 
+driver provided by the \ref Camera1394 ROS package and take advantage of a common hardware manipulation 
+interface.   
 
--->
+@section usage Usage
+
 
 
 */
