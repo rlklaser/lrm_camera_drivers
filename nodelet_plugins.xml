@@ -1,0 +1,27 @@
+<library path="lib/liblrm_camera_drivers">
+
+	<class
+                name="lrm_camera_drivers/split_lb"
+                type="lrm_camera_drivers::SplitLadybugNodelet"
+		base_class_type="nodelet::Nodelet"
+	>
+                <description>Nodelet to split 1/2/3/4/5/6 images from Format7 LadyBug stereo image</description>
+	</class>
+
+	<class
+                name="lrm_camera_drivers/split_bb2"
+                type="lrm_camera_drivers::SplitBB2Nodelet"
+		base_class_type="nodelet::Nodelet"
+	>
+                <description>Nodelet to split left/right images from Format7 Bumblebee 2 stereo image</description>
+	</class>
+
+	<class
+                name="lrm_camera_drivers/split_xb3"
+                type="lrm_camera_drivers::SplitXB3Nodelet"
+		base_class_type="nodelet::Nodelet"
+	>
+                <description>Nodelet to split left/right narrow/wide images from Format7 Bumblebee XB3 stereo image</description>
+	</class>
+
+</library>

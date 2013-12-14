@@ -1,0 +1,35 @@
+<package>
+	<description brief="lrm_camera_drivers">
+
+		lrm_camera_drivers
+
+	</description>
+	<author>Rafael Luiz Klaser</author>
+	<license>BSD</license>
+	<review
+		status="unreviewed"
+		notes="" />
+	<url>http://ros.org/wiki/lrm_camera_drivers</url>
+
+	<depend package="roscpp" />
+	<depend package="std_msgs" />
+	<depend package="sensor_msgs" />
+	<depend package="tf" />
+	<depend package="nodelet" />
+	<depend package="image_transport" />
+	<depend package="camera_info_manager" />
+	<depend package="dynamic_reconfigure" />
+	<depend package="camera1394" />
+
+	<rosdep name="libdc1394-dev" />
+
+	<export>
+		<cpp
+			cflags="-I${prefix}/include"
+			lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -llrm_camera_drivers" />
+		<nodelet plugin="${prefix}/nodelet_plugins.xml" />
+	</export>
+
+</package>
+
+
